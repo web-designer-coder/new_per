@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aryan Wankhade | Creative Web Developer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Cursor Animation -->
+    <div class="cursor-dot-outline"></div>
+    <div class="cursor-dot"></div>
+
+    <!-- Scroll Progress Indicator -->
+    <div class="progress-bar" id="progressBar"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="#home">AW</a>
+            </div>
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#certifications" class="nav-link">Certifications</a></li>
+                <li><a href="#accomplishments" class="nav-link">Accomplishments</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="particles-container" id="particles"></div>
+            <div class="hero-content">
+                <h1 class="glitch" data-text="Aryan Wankhade">Aryan Wankhade</h1>
+                <div class="typewriter">
+                    <h2 id="typewriter-text"></h2>
+                </div>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View Projects</a>
+                    <a href="resume.pdf" class="btn btn-secondary" download>Download Resume</a>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <div class="mouse">
+                    <div class="wheel"></div>
+                </div>
+                <div>
+                    <span class="scroll-arrow">
+                        <span></span>
+                        <span></span>
+                    </span>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-container">
+                <div class="about-image">
+                    <div class="image-wrapper">
+                        <img src="1.webp" alt="Aryan Wankhade - Computer Engineering Student at PCCoE, Pune">
+                    </div>
+                </div>
+                <div class="about-content">
+                    <h3>Hello, I'm <span class="highlight">Aryan Wankhade</span></h3>
+                    <p>I'm an enthusiastic Computer Engineering student with strong interests in web and full-stack development. Currently pursuing my B.Tech (2023–2027) at Pimpri Chinchwad College of Engineering, Pune.</p>
+                    <p>I've achieved 5-star ratings in C++ and Python on HackerRank and completed Front-End Web Development certification from Coursera (University of Michigan).</p>
+                    <div class="about-details">
+                        <div class="detail-item">
+                            <i class="fas fa-graduation-cap" aria-hidden="true"></i>
+                            <div>
+                                <h4>Education</h4>
+                                <p>B.Tech in Computer Engineering</p>
+                                <p>PCCoE, Pune (2023-2027)</p>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-code" aria-hidden="true"></i>
+                            <div>
+                                <h4>Coding</h4>
+                                <p>5-star C++ & Python on HackerRank</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="quote-bubble">
+                        <p>"The best way to predict the future is to create it."</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects">
+            <div class="section-header">
+                <h2 class="section-title">Projects</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="projects-container">
+                <div class="project-card">
+                    <div class="project-card-inner">
+                        <div class="project-card-front">
+                            <div class="project-icon">
+                                <i class="fas fa-home" aria-hidden="true"></i>
+                            </div>
+                            <h3>AI-Based Housing Recommendation</h3>
+                            <p>Hover to see details</p>
+                        </div>
+                        <div class="project-card-back">
+                            <h3>AI-Based Housing Recommendation</h3>
+                            <div class="project-tools">
+                                <span><i class="fas fa-server" aria-hidden="true"></i> FastAPI</span>
+                                <span><i class="fab fa-python" aria-hidden="true"></i> Python</span>
+                                <span><i class="fab fa-html5" aria-hidden="true"></i> HTML</span>
+                                <span><i class="fab fa-css3-alt" aria-hidden="true"></i> CSS</span>
+                                <span><i class="fab fa-js" aria-hidden="true"></i> JavaScript</span>
+                            </div>
+                            <div class="project-description">
+                                <p>Built a web app with a neural network model to recommend rental flats based on user input (BHK, budget, location, bachelor-friendly).</p>
+                                <p><strong>Impact:</strong> Improved user search experience by 40% compared to manual filtering.</p>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fab fa-github" aria-hidden="true"></i> Code</a>
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt" aria-hidden="true"></i> Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- New Project: GitHub Repo Explorer -->
+                <!-- <div class="project-card">
+                    <div class="project-card-inner">
+                        <div class="project-card-front">
+                            <div class="project-icon">
+                                <i class="fab fa-github" aria-hidden="true"></i>
+                            </div>
+                            <h3>GitHub Repo Explorer</h3>
+                            <p>Hover to see details</p>
+                        </div>
+                        <div class="project-card-back">
+                            <h3>GitHub Repo Explorer</h3>
+                            <div class="project-tools">
+                                <span><i class="fab fa-html5" aria-hidden="true"></i> HTML</span>
+                                <span><i class="fab fa-css3-alt" aria-hidden="true"></i> CSS</span>
+                                <span><i class="fab fa-js" aria-hidden="true"></i> JavaScript</span>
+                                <span><i class="fas fa-code-branch" aria-hidden="true"></i> GitHub API</span>
+                            </div>
+                            <div class="project-description">
+                                <p>A web application that allows users to search and explore GitHub repositories with detailed information and statistics.</p>
+                                <p><strong>Features:</strong> User search, repository filtering, star count visualization, and responsive design.</p>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fab fa-github" aria-hidden="true"></i> Code</a>
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt" aria-hidden="true"></i> Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+                
+                <!-- New Project: Weather App -->
+                <div class="project-card">
+                    <div class="project-card-inner">
+                        <div class="project-card-front">
+                            <div class="project-icon">
+                                <i class="fas fa-cloud-sun" aria-hidden="true"></i>
+                            </div>
+                            <h3>Weather Forecast App</h3>
+                            <p>Hover to see details</p>
+                        </div>
+                        <div class="project-card-back">
+                            <h3>Weather Forecast App</h3>
+                            <div class="project-tools">
+                                <span><i class="fab fa-html5" aria-hidden="true"></i> HTML</span>
+                                <span><i class="fab fa-css3-alt" aria-hidden="true"></i> CSS</span>
+                                <span><i class="fab fa-js" aria-hidden="true"></i> JavaScript</span>
+                                <span><i class="fas fa-cloud" aria-hidden="true"></i> Weather API</span>
+                            </div>
+                            <div class="project-description">
+                                <p>A responsive weather application that provides current weather conditions and 5-day forecasts for any location.</p>
+                                <p><strong>Features:</strong> Geolocation, search functionality, animated weather icons, and temperature unit conversion.</p>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fab fa-github" aria-hidden="true"></i> Code</a>
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt" aria-hidden="true"></i> Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills">
+            <div class="section-header">
+                <h2 class="section-title">Skills</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3>Programming Languages</h3>
+                    <div class="skill-items">
+                        <div class="skill-item" data-skill="C++">
+                            <div class="skill-icon">
+                                <i class="fas fa-code" aria-hidden="true"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4>C++</h4>
+                                <div class="skill-progress-container">
+                                    <div class="skill-progress" data-progress="90"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="Python">
+                            <div class="skill-icon">
+                                <i class="fab fa-python" aria-hidden="true"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4>Python</h4>
+                                <div class="skill-progress-container">
+                                    <div class="skill-progress" data-progress="85"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="JavaScript">
+                            <div class="skill-icon">
+                                <i class="fab fa-js" aria-hidden="true"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4>JavaScript</h4>
+                                <div class="skill-progress-container">
+                                    <div class="skill-progress" data-progress="80"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Web Technologies</h3>
+                    <div class="skill-items">
+                        <div class="skill-item" data-skill="HTML">
+                            <div class="skill-icon">
+                                <i class="fab fa-html5" aria-hidden="true"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4>HTML</h4>
+                                <div class="skill-progress-container">
+                                    <div class="skill-progress" data-progress="95"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="CSS">
+                            <div class="skill-icon">
+                                <i class="fab fa-css3-alt" aria-hidden="true"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4>CSS</h4>
+                                <div class="skill-progress-container">
+                                    <div class="skill-progress" data-progress="90"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="React">
+                            <div class="skill-icon">
+                                <i class="fab fa-react" aria-hidden="true"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4>React</h4>
+                                <div class="skill-progress-container">
+                                    <div class="skill-progress" data-progress="75"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Tools & Frameworks</h3>
+                    <div class="skill-items">
+                        <div class="skill-item" data-skill="FastAPI">
+                            <div class="skill-icon">
+                                <i class="fas fa-server" aria-hidden="true"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4>FastAPI</h4>
+                                <div class="skill-progress-container">
+                                    <div class="skill-progress" data-progress="80"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="Git">
+                            <div class="skill-icon">
+                                <i class="fab fa-git-alt" aria-hidden="true"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4>Git</h4>
+                                <div class="skill-progress-container">
+                                    <div class="skill-progress" data-progress="85"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Soft Skills</h3>
+                    <div class="skill-items">
+                        <div class="skill-item" data-skill="Communication">
+                            <div class="skill-icon">
+                                <i class="fas fa-comments" aria-hidden="true"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4>Communication</h4>
+                                <div class="skill-progress-container">
+                                    <div class="skill-progress" data-progress="90"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="Teamwork">
+                            <div class="skill-icon">
+                                <i class="fas fa-users" aria-hidden="true"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4>Teamwork</h4>
+                                <div class="skill-progress-container">
+                                    <div class="skill-progress" data-progress="95"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="Time Management">
+                            <div class="skill-icon">
+                                <i class="fas fa-clock" aria-hidden="true"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4>Time Management</h4>
+                                <div class="skill-progress-container">
+                                    <div class="skill-progress" data-progress="85"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section id="certifications" class="certifications">
+            <div class="section-header">
+                <h2 class="section-title">Certifications</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="certifications-container">
+                <div class="certification-card">
+                    <div class="certification-ribbon"></div>
+                    <div class="certification-content">
+                        <div class="certification-icon">
+                            <i class="fas fa-certificate" aria-hidden="true"></i>
+                        </div>
+                        <h3>Front-End Web Development</h3>
+                        <p class="certification-provider">Coursera – University of Michigan</p>
+                        <p class="certification-date">2024</p>
+                        <div class="certification-details">
+                            <p>Covered HTML, CSS, JavaScript, responsive design principles, and modern web development practices.</p>
+                        </div>
+                        <div class="certification-badge">
+                            <i class="fas fa-award" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Accomplishments Section -->
+        <section id="accomplishments" class="accomplishments">
+            <div class="parallax-bg"></div>
+            <div class="section-header">
+                <h2 class="section-title">Accomplishments</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="accomplishments-container">
+                <div class="accomplishment-card">
+                    <div class="accomplishment-icon">
+                        <i class="fas fa-trophy" aria-hidden="true"></i>
+                    </div>
+                    <div class="accomplishment-content">
+                        <h3>HackerRank Ratings</h3>
+                        <p>Achieved top 5-star ratings on HackerRank in C++ and Python, demonstrating proficiency in algorithm implementation and problem-solving.</p>
+                    </div>
+                </div>
+                <div class="accomplishment-card">
+                    <div class="accomplishment-icon">
+                        <i class="fas fa-laptop-code" aria-hidden="true"></i>
+                    </div>
+                    <div class="accomplishment-content">
+                        <h3>Competitions</h3>
+                        <p>Participated in coding contests, hackathons, and technical fests, gaining valuable experience in competitive programming and team collaboration.</p>
+                    </div>
+                </div>
+                <div class="accomplishment-card">
+                    <div class="accomplishment-icon">
+                        <i class="fas fa-graduation-cap" aria-hidden="true"></i>
+                    </div>
+                    <div class="accomplishment-content">
+                        <h3>Online Learning</h3>
+                        <p>Completed multiple courses on platforms like Coursera and Udemy, continuously expanding knowledge in web development and programming.</p>
+                    </div>
+                </div>
+                <div class="accomplishment-card">
+                    <div class="accomplishment-icon">
+                        <i class="fas fa-users" aria-hidden="true"></i>
+                    </div>
+                    <div class="accomplishment-content">
+                        <h3>Soft Skills</h3>
+                        <p>Developed strong soft skills via group projects and leadership roles, enhancing communication and team management abilities.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="section-header">
+                <h2 class="section-title">Contact Me</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope" aria-hidden="true"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Email</h3>
+                            <p>aryan.wankhade23@pccoepune.org</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone" aria-hidden="true"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Phone</h3>
+                            <p>9403389006</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Location</h3>
+                            <p>Pune, Maharashtra, India</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link" target="_blank" aria-label="GitHub Profile">
+                            <i class="fab fa-github" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" class="social-link" target="_blank" aria-label="LinkedIn Profile">
+                            <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+                        </a>
+                        <a href="mailto:aryan.wankhade23@pccoepune.org" class="social-link" aria-label="Send Email">
+                            <i class="fas fa-envelope" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-form-container">
+                    <form id="contactForm" class="contact-form" action="https://formspree.io/f/your-formspree-id" method="POST">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" required>
+                            <label for="name">Your Name</label>
+                            <span class="form-error"></span>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" required>
+                            <label for="email">Your Email</label>
+                            <span class="form-error"></span>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" required>
+                            <label for="subject">Subject</label>
+                            <span class="form-error"></span>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                            <label for="message">Your Message</label>
+                            <span class="form-error"></span>
+                        </div>
+                        <button type="submit" class="btn btn-submit">
+                            <span>Send Message</span>
+                            <i class="fas fa-paper-plane" aria-hidden="true"></i>
+                        </button>
+                    </form>
+                    <div id="formSuccess" class="form-success">
+                        <i class="fas fa-check-circle" aria-hidden="true"></i>
+                        <p>Your message has been sent successfully!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h2>Aryan Wankhade</h2>
+                <p>Web Developer & Computer Engineer</p>
+            </div>
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#skills">Skills</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="footer-social">
+                <a href="#" target="_blank" aria-label="GitHub Profile"><i class="fab fa-github" aria-hidden="true"></i></a>
+                <a href="#" target="_blank" aria-label="LinkedIn Profile"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+                <a href="mailto:aryan.wankhade23@pccoepune.org" aria-label="Send Email"><i class="fas fa-envelope" aria-hidden="true"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Aryan Wankhade. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTop" class="scroll-to-top" aria-label="Scroll to top">
+        <i class="fas fa-arrow-up" aria-hidden="true"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
